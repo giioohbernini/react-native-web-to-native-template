@@ -7,6 +7,7 @@ import splashScreen from 'react-native-splash-screen'
 
 import Main from '~/pages/Main'
 import Offline from '~/pages/Offline'
+import Loading from '~/pages/Loading'
 
 const stack = createStackNavigator()
 
@@ -20,17 +21,24 @@ const Routes = () => {
   const { isConnected, details } = useNetInfo()
   const hasDetails = R.is(Object, details)
 
-  const initialRoute = isConnected ? 'webview' : 'offline'
+  const initialRoute = hasDetails
+    ? isConnected
+      ? 'webview'
+      : 'offline'
+    : 'loading'
 
-  if (hasDetails && initialRoute === 'offline') {
-    splashScreen.hide()
+  if (hasDetails) {
+    setTimeout(() => {
+      splashScreen.hide()
+    }, 50)
   }
 
   return (
-    <NavigationContainer>
+    <NavigationContainer key={`${initialRoute}-routes`}>
       <Navigator initialRouteName={initialRoute}>
         <Screen name="webview" component={Main} options={commonOptions} />
         <Screen name="offline" component={Offline} options={commonOptions} />
+        <Screen name="loading" component={Loading} options={commonOptions} />
       </Navigator>
     </NavigationContainer>
   )

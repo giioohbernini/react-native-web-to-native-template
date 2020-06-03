@@ -7,7 +7,7 @@ export const rootUrl = 'http://example.com/'
 
 export const urlToStatusBarColor = {
   default: {
-    backgroundColor: '#ff000',
+    backgroundColor: '#ffffff',
     barStyle: 'dark-content',
   },
 }

@@ -3,7 +3,7 @@ import { ActivityIndicator, StyleSheet, View } from 'react-native'
 
 const Loader = ({ size = 'large', isLightColor }) => {
   const color = isLightColor ? '#FFF' : '#000'
-  const backgroundColor = isLightColor ? '#362ca4' : '#fafafa'
+  const backgroundColor = isLightColor ? '#000' : '#FFF'
 
   const styles = StyleSheet.create({
     activityView: {
