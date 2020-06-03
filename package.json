@@ -1,7 +1,21 @@
 {
-  "name": "webToNative",
+  "name": "react-native-web-to-native-template",
+  "description": "Boilerplate to start your migration from web to app",
   "version": "0.0.1",
-  "private": true,
+  "keywords": [
+    "react-native",
+    "web-to-native",
+    "boilerplate",
+    "template"
+  ],
+  "homepage": "https://github.com/giioohbernini/react-native-web-to-native-template#readme",
+  "author": "Giovanni Bernini  <giovannibernini.ti@gmail.com.br>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giioohbernini/react-native-web-to-native-template.git"
+  },
+  "private": false,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
