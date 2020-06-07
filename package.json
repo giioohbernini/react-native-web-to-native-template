@@ -15,7 +15,6 @@
     "type": "git",
     "url": "git+https://github.com/giioohbernini/react-native-web-to-native-template.git"
   },
-  "private": false,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
