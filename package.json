@@ -1,7 +1,7 @@
 {
   "name": "react-native-web-to-native-template",
   "description": "Boilerplate to start your migration from web to app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
     "react-native",
     "web-to-native",
